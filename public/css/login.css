@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0b0f19;
+    background-image: radial-gradient(at 50% 0%, rgba(37, 99, 235, 0.12) 0px, transparent 60%);
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.login-card {
+    background: #1e293b;
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    box-shadow:
+        0 10px 25px -5px rgba(0, 0, 0, 0.4),
+        0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+.login-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.error-alert {
+    background-color: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #fca5a5;
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.form-group input {
+    width: 100%;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-group input::placeholder {
+    color: #475569;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.025em;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.submit-btn:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+}
